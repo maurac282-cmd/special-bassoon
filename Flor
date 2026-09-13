@@ -1,0 +1,17 @@
+import turtle
+
+# Configuração da tela
+tela = turtle.Screen()
+tela.bgcolor("black")  # Fundo preto para destacar as cores
+
+# Configuração da "caneta"
+flor = turtle.Turtle()
+flor.speed(0)  # Velocidade máxima de desenho
+flor.color("cyan")  # Cor da flor
+
+# O comando para desenhar a flor geométrica
+for i in range(36):
+    flor.circle(100)  # Desenha uma pétala circular
+    flor.left(10)  # Gira 10 graus para o lado antes da próxima pétala
+
+turtle.done()
